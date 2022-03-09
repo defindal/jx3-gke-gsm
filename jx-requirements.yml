@@ -5,8 +5,8 @@ spec:
     enabled: false
     schedule: ""
   cluster:
-    devEnvApprovers:
-    - irvan-sekera
+          #devEnvApprovers:
+          #- irvan-sekera
     environmentGitOwner: defindal
     gitKind: github
     gitName: github
@@ -15,7 +15,7 @@ spec:
     provider: gke
     registry: gcr.io
   environments:
-  - key: dev
+          #- key: dev
   - key: staging
   - key: production
   ingress:
