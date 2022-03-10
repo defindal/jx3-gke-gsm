@@ -7,7 +7,7 @@ spec:
   cluster:
     devEnvApprovers:
     - irvan-sekera
-    environmentGitOwner: defindal
+    environmentGitOwner: "defindal"
     gitKind: github
     gitName: github
     gitServer: https://github.com
@@ -15,6 +15,9 @@ spec:
     provider: gke
     registry: gcr.io
   environments: 
+  - key: dev
+    owner: defindal
+    repository: jx3-gke-gsm
   - key: staging
   - key: production
   ingress:
