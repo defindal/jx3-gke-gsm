@@ -16,6 +16,8 @@ spec:
     registry: gcr.io
   environments:
   - key: dev
+    source:
+            url:
   - key: staging
   - key: production
   ingress:
@@ -27,8 +29,6 @@ spec:
       enabled: false
       production: false
   repository: nexus
-  source:
-          url:
   secretStorage: gsm
   vault: {}
   webhook: lighthouse
