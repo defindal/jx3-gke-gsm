@@ -50,7 +50,7 @@ jxRequirements:
       production: true
   kuberhealthy: true
   pipelineUser:
-    username: jenkins-x-labs-bot
+    username: irvan-sekera
   repository: nexus
   secretStorage: gsm
   storage:

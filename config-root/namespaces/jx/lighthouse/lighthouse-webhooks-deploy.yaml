@@ -42,7 +42,7 @@ spec:
             - name: "GIT_SERVER"
               value: "https://github.com"
             - name: "GIT_USER"
-              value: jenkins-x-labs-bot
+              value: irvan-sekera
             - name: "GIT_TOKEN"
               valueFrom:
                 secretKeyRef:
