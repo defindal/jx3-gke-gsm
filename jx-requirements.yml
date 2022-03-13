@@ -31,7 +31,7 @@ spec:
     namespaceSubDomain: -jx.
     tls:
       email: defindal@gmail.com
-      enabled: true
+      enabled: false
       production: true
   kuberhealthy: true
   pipelineUser:
