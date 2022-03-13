@@ -15,7 +15,6 @@ spec:
     gitServer: https://github.com
     gke:
       projectNumber: "398506542991"
-    kanikoFlags: --skip-unused-stages --snapshotMode=redo
     project: xl-devops
     provider: gke
     registry: gcr.io
@@ -31,12 +30,12 @@ spec:
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
-      email: ""
-      enabled: false
+      email: defindal@gmail.com
+      enabled: true
       production: true
   kuberhealthy: true
   pipelineUser:
-    username: irvan-sekera
+    username: jenkins-x-labs-bot
   repository: nexus
   secretStorage: gsm
   storage:
