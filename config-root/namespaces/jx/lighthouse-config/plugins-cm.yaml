@@ -8,7 +8,15 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - defindal/jx3-golang-demo
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - defindal/jx3-spring-src
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - defindal/jx3-spring
       require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
@@ -25,6 +33,16 @@ data:
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
+      defindal/jx3-golang-demo:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      defindal/jx3-spring:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       defindal/jx3-spring-src:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -37,6 +55,38 @@ data:
     plugins:
       defindal/jx3-gke-gsm:
       - config-updater
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      defindal/jx3-golang-demo:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      defindal/jx3-spring:
       - approve
       - assign
       - blunderbuss
@@ -81,7 +131,13 @@ data:
       - defindal/jx3-gke-gsm
       trusted_org: todo
     - repos:
+      - defindal/jx3-golang-demo
+      trusted_org: todo
+    - repos:
       - defindal/jx3-spring-src
+      trusted_org: todo
+    - repos:
+      - defindal/jx3-spring
       trusted_org: todo
     welcome:
     - message_template: Welcome

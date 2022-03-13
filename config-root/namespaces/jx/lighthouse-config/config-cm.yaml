@@ -8,6 +8,8 @@ data:
     in_repo_config:
       enabled:
         defindal/jx3-gke-gsm: true
+        defindal/jx3-golang-demo: true
+        defindal/jx3-spring: true
         defindal/jx3-spring-src: true
     plank: {}
     pod_namespace: jx
@@ -21,6 +23,8 @@ data:
         skip-unknown-contexts: false
       merge_method:
         defindal/jx3-gke-gsm: merge
+        defindal/jx3-golang-demo: merge
+        defindal/jx3-spring: merge
         defindal/jx3-spring-src: merge
       queries:
       - labels:
@@ -33,7 +37,9 @@ data:
         - needs-rebase
         repos:
         - defindal/jx3-gke-gsm
+        - defindal/jx3-golang-demo
         - defindal/jx3-spring-src
+        - defindal/jx3-spring
       - labels:
         - updatebot
         missingLabels:
@@ -44,7 +50,9 @@ data:
         - needs-rebase
         repos:
         - defindal/jx3-gke-gsm
+        - defindal/jx3-golang-demo
         - defindal/jx3-spring-src
+        - defindal/jx3-spring
       target_url: http://lighthouse-jx.34.134.12.91.nip.io/merge/status
 kind: ConfigMap
 metadata:
