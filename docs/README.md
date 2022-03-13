@@ -12,6 +12,15 @@
   </thead>
   <tbody>
     <tr>
+		      <td colspan='4'><h3>cert-manager</h3></td>
+		    </tr>
+	    <tr>
+	      <td><a href='https://github.com/jetstack/cert-manager' title='A Helm chart for cert-manager'> <img src='https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png' width='24px' height='24px'> cert-manager </a></td>
+	      <td>1.1.0</td>
+	      <td></td>
+	      <td><a href='https://github.com/jetstack/cert-manager'>source</a></td>
+	    </tr>
+    <tr>
 		      <td colspan='4'><h3>jx-production</h3></td>
 		    </tr>
 	    <tr>
@@ -33,6 +42,12 @@
 		      <td colspan='4'><h3>jx</h3></td>
 		    </tr>
 	    <tr>
+	      <td><a href='' title='Acme'> <img src='https://avatars2.githubusercontent.com/u/35583233?s=200&v=4' width='24px' height='24px'> acme </a></td>
+	      <td>0.0.24</td>
+	      <td></td>
+	      <td></td>
+	    </tr>
+    <tr>
 	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources' title='A Helm chart for the resources for JX Boot'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jxboot-helmfile-resources </a></td>
 	      <td>1.1.38</td>
 	      <td></td>
@@ -77,6 +92,15 @@
     <tr>
 	      <td><a href='https://jenkins-x.io/' title='Jenkins X next gen cloud CI / CD platform for Kubernetes'> <img src='https://jenkins-x.github.io/jenkins-x-website/img/profile.png' width='24px' height='24px'> jx-kh-check </a></td>
 	      <td>0.0.78</td>
+	      <td></td>
+	      <td><a href='https://jenkins-x.io/'>source</a></td>
+	    </tr>
+    <tr>
+		      <td colspan='4'><h3>kuberhealthy</h3></td>
+		    </tr>
+	    <tr>
+	      <td><a href='https://jenkins-x.io/' title='Jenkins X next gen cloud CI / CD platform for Kubernetes'> <img src='https://jenkins-x.github.io/jenkins-x-website/img/profile.png' width='24px' height='24px'> kh-tls-check </a></td>
+	      <td>0.0.10</td>
 	      <td></td>
 	      <td><a href='https://jenkins-x.io/'>source</a></td>
 	    </tr>

@@ -1,5 +1,29 @@
 - namespace: cert-manager
   path: helmfiles/cert-manager/helmfile.yaml
+  releases:
+  - apiVersion: v1
+    appVersion: v1.1.0
+    description: A Helm chart for cert-manager
+    firstDeployed: "2022-03-13T12:34:05Z"
+    home: https://github.com/jetstack/cert-manager
+    icon: https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png
+    keywords:
+    - cert-manager
+    - kube-lego
+    - letsencrypt
+    - tls
+    lastDeployed: "2022-03-13T12:34:05Z"
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=xl-devops&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Fjx3-def-cluster%2Fnamespace_name%2Fcert-manager%2Fcontainer_name%2Fcert-manager&dateRangeUnbound=both
+    maintainers:
+    - email: james@jetstack.io
+      name: munnerz
+    name: cert-manager
+    repositoryName: jetstack
+    repositoryUrl: https://charts.jetstack.io
+    resourcePath: config-root/namespaces/cert-manager/cert-manager
+    sources:
+    - https://github.com/jetstack/cert-manager
+    version: 1.1.0
 - namespace: jx-dev
   path: helmfiles/jx-dev/helmfile.yaml
 - namespace: jx-production
@@ -37,6 +61,17 @@
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
+  - apiVersion: v1
+    appVersion: 0.0.24
+    description: Acme
+    firstDeployed: "2022-03-13T12:34:16Z"
+    icon: https://avatars2.githubusercontent.com/u/35583233?s=200&v=4
+    lastDeployed: "2022-03-13T12:34:16Z"
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=xl-devops&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Fjx3-def-cluster%2Fnamespace_name%2Fjx%2Fcontainer_name%2Facme&dateRangeUnbound=both
+    name: acme
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
+    version: 0.0.24
   - apiVersion: v1
     appVersion: 1.1.38
     description: A Helm chart for the resources for JX Boot
@@ -159,6 +194,25 @@
     version: 0.0.78
 - namespace: kuberhealthy
   path: helmfiles/kuberhealthy/helmfile.yaml
+  releases:
+  - apiVersion: v2
+    appVersion: 0.0.10
+    description: Jenkins X next gen cloud CI / CD platform for Kubernetes
+    firstDeployed: "2022-03-13T12:34:26Z"
+    home: https://jenkins-x.io/
+    icon: https://jenkins-x.github.io/jenkins-x-website/img/profile.png
+    lastDeployed: "2022-03-13T12:34:26Z"
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=xl-devops&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Fjx3-def-cluster%2Fnamespace_name%2Fkuberhealthy%2Fcontainer_name%2Fkh-tls-check&dateRangeUnbound=both
+    maintainers:
+    - email: jenkins-x@googlegroups.com
+      name: Jenkins X Team
+    name: kh-tls-check
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
+    resourcePath: config-root/namespaces/kuberhealthy/kh-tls-check
+    sources:
+    - https://github.com/jenkins-x-plugins/kh-tls-check
+    version: 0.0.10
 - namespace: nginx
   path: helmfiles/nginx/helmfile.yaml
   releases:

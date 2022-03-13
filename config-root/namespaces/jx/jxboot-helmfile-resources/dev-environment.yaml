@@ -29,7 +29,7 @@ spec:
     envOrganisation: defindal
     gitServer: https://github.com
     kubeProvider: "gke"
-    pipelineUsername: "irvan-sekera"
+    pipelineUsername: "jenkins-x-labs-bot"
     pipelineUserEmail: "jenkins-x@googlegroups.com"
     prowConfig: Scheduler
     storageLocations:

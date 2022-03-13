@@ -20,3 +20,7 @@ spec:
                 port:
                   number: 80
       host: nexus-jx.34.134.12.91.nip.io
+  tls:
+    - hosts:
+        - nexus-jx.34.134.12.91.nip.io
+      secretName: "tls-34-134-12-91-nip-io-p"

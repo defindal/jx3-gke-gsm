@@ -1,0 +1,10 @@
+# Source: kh-tls-check/templates/kh-tls-check.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: kh-tls-check-sa
+  namespace: kuberhealthy
+  annotations:
+    meta.helm.sh/release-name: 'kh-tls-check'
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
