@@ -20,7 +20,3 @@ spec:
                 port:
                   number: 8080
       host: chartmuseum-jx.34.134.12.91.nip.io
-  tls:
-    - hosts:
-        - chartmuseum-jx.34.134.12.91.nip.io
-      secretName: "tls-34-134-12-91-nip-io-p"

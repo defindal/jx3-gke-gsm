@@ -21,7 +21,3 @@ spec:
                   number: 80
             path: "/hook"
       host: hook-jx.34.134.12.91.nip.io
-  tls:
-    - hosts:
-        - hook-jx.34.134.12.91.nip.io
-      secretName: "tls-34-134-12-91-nip-io-p"

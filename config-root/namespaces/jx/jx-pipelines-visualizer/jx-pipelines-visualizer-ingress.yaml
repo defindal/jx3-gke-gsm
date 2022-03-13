@@ -28,7 +28,3 @@ spec:
                 name: jx-pipelines-visualizer
                 port:
                   name: http
-  tls:
-    - secretName: tls-34-134-12-91-nip-io-p
-      hosts:
-        - dashboard-jx.34.134.12.91.nip.io

@@ -46,7 +46,7 @@ jxRequirements:
     namespaceSubDomain: -tekton-pipelines.
     tls:
       email: defindal@gmail.com
-      enabled: true
+      enabled: false
       production: true
   kuberhealthy: true
   pipelineUser:
@@ -65,10 +65,10 @@ jxRequirements:
 jxRequirementsIngressExternalDNS:
   enabled: false
 jxRequirementsIngressTLS:
-  enabled: true
+  enabled: false
 jxRequirementsKuberhealthy:
   enabled: true
 jxRequirementsTLSCheck:
-  enabled: true
+  enabled: false
 jxRequirementsVault:
   enabled: false
